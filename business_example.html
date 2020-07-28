@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>R.I.E</title>
+		<!-- link to main stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+	<body>
+		<nav id="nav">
+    		<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="custom_form.html">Custom Search</a></li>
+    		</ul>
+		</nav>
+		<div class="container">
+    		<div class="blurb">
+                <h1>Country Kitchen</h1>
+                <ul>
+                    <li><b>Location:</b> Wickenburg, AZ</li>
+                    <li><b>Categories:</b> American (New), Restaurants</li>
+                    <li><b>Good for:</b> Brunch, Takeout, Kids, and Groups</li>
+                    <li><b>Number of Stars:</b> 3.0</li>
+                    <li><b>Number of Reviews:</b> 16</li>
+                    <li><b>Average Sentiment Score:</b> 0.3798</li>
+                    <li><b>Sentiment Variance:</b> 0.2701</li>
+				</ul>
+				<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+				<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+				<script>
+					window.onload = function () {
+					
+					var chart = new CanvasJS.Chart("chartContainer", {
+						animationEnabled: true,
+						theme: "light2",
+						title:{
+							text: "Reviews by Star Rating"
+						},
+						axisY:{
+							includeZero: false
+						},
+						data: [{        
+							type: "line",
+							name: "Country Kitchen",
+							showInLegend: true,
+							indexLabelFontSize: 16,
+							dataPoints: [
+								{ x: new Date(2009,12,04),y: 4 },
+								{ x: new Date(2010,09,14),y: 4},
+								{ x: new Date(2010,10,25),y: 2},
+								{ x: new Date(2011,05,29),y: 1 },
+								{ x: new Date(2013,05,23),y: 2 },
+								{ x: new Date(2013,12,01),y: 3 },
+								{ x: new Date(2014,01,10),y: 2 },
+								{ x: new Date(2014,06,04),y: 5 }
+							]
+						},
+					{
+							type: "line",
+							name: "Mecca Bar & Grill",
+							showInLegend: true,
+							indexLabelFontSize: 16,
+							dataPoints: [
+								{ x: new Date(2010,10,31),y: 4 },
+								{ x: new Date(2012,01,23),y: 4},
+								{ x: new Date(2012,02,19),y: 1}
+							]
+						}]
+					});
+					chart.render();
+					
+					}
+					</script>
+                <h2>Nearby Competition</h2>
+                <ul>
+                    <li> Mecca Bar & Grill
+                        <ul>
+                            <li><b>Location:</b> Wickenburg, AZ</li>
+                            <li><b>Categories:</b> American (New), Restaurants</li>
+                            <li><b>Good for:</b>Groups, very loud atmosphere</li>
+                            <li><b>Number of Stars:</b> 3.0</li>
+                            <li><b>Number of Reviews:</b> 6</li>
+                            <li><b>Average Sentiment Score:</b> 0.4111</li>
+                            <li><b>Sentiment Variance:</b> 0.4360</li> 
+                        </ul>
+                    </li>
+                </ul>
+				<p></p>
+			</div><!-- /.blurb -->
+		</div><!-- /.container -->
+			<h2></h2>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+
+  		</script>
+		<footer>
+    		<ul>
+        		<li><a href="mailto:orlando4@illinois.edu">email</a></li>
+        		<li><a href="https://github.com/korlan01">github.com/korlan01</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
