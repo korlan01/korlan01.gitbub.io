@@ -6,7 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 	</head>
 	<body>
-        <h1>Custom Search Template</h1>
+		<h1>Welcome to the Restaurant Info Extractor</h1>
 		<nav id="nav">
     		<ul>
 				<li><a href="index.html">Home</a></li>
@@ -15,52 +15,22 @@
 		</nav>
 		<div class="container">
     		<div class="blurb">
-
-				<p>I want to search by:</p>
-            </div>
-        <form action="/my-handling-form-page" method="post">
-                <ul>
-                 <li>
-                    <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" value = "85009" name="searchopt">
-                 </li>
-                 <li>
-                    <label for="cat">Cuisine</label>
-                    <select id="mySelect" size="3">
-                        <option>American (Traditional)</option>
-                        <option>American (New)</option>
-                        <option>Italian</option>
-                        <option>Mexican</option>
-                      </select>
-                 </li>
-                </ul>
-        </form>
-        <button id="myBtn2" onclick="location.href = 'business_page.html'">Submit</button>
-        <script>
-        var input = document.getElementById("myInput");
-        input.addEventListener("keyup", function(event) {
-          if (event.keyCode === 13) {
-           event.preventDefault();
-           document.getElementById("myBtn").click();
-          }
-        });
-        </script>    
-            <div>
-                <!--Radio Buttons for search options-->
-                <div>
-                    
-                    
-                </div>
-                <div>
-                    
-                    
-                </div>
-            </div>
-		</div>
-			<h2></h2>
-		<script src="https://d3js.org/d3.v5.min.js"></script>
-
-  		</script>
+				<p>Looking to get a leg up on your competition?  The info extractor let's you compare yourself to other businesses in your sector and/or location.</p>
+			</div><!-- /.blurb -->
+		</div><!-- /.container -->
+			<h2>Are you a currently in the Yelp system or want to design your own search?</h2>
+			<p>Input your BusinessID if you are a current member:</p>
+			<input id="myInput" value="ltAPE16jLxC-BAnHhcI9CQ">
+			<button id="myBtn" onclick="location.href = 'business_example.html'"">Submit</button>
+			<script>
+			var input = document.getElementById("myInput");
+			input.addEventListener("keyup", function(event) {
+			  if (event.keyCode === 13) {
+			   event.preventDefault();
+			   document.getElementById("myBtn").click();
+			  }
+			});
+			</script>
 		<footer>
     		<ul>
         		<li><a href="mailto:orlando4@illinois.edu">email</a></li>
